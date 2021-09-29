@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,600;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+main  {
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #0000008c;
+    text-align: center;
+    background-color: #fff;
+}
+.container-topo {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(22, 180, 180);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.menu-nav  {
+   display: flex;
+   flex-direction: row;
+   margin: 20px;
+}
+.menu img {
+    width: 120px;
+    height: 60px;
+    margin-left: 50px;
+}
+.item-pic {
+    width: 374px;
+    height: 250px;
+    padding: 0;
+    margin: 0;
+}
+.menu-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+li {
+    list-style: none;
+}
+h1 {
+    padding: 6px;
+    font-size: 28px;
+}
+h3 {
+    font-size: 22px;
+    padding: 6px;
+}
+p {
+    font-size: 18px;
+	    margin: 16px 0;
+    white-space: pre-line;
+}
+
+.menu-espec {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-espec-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-menu-espec a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #0000008c;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(22, 180, 180);
+}
+.content-main-title {
+    padding: 14px;
+    margin: 30px 0;
+  }
+.content-desc-main {
+    width: 100%;
+    padding: 10px 0;
+    margin: 30px 0;
+  }
+  .container-espec-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.content-table {
+    width: 600px;
+    height: 250px;
+    border-spacing: 0;
+
+}
+th {
+    padding: 6px;
+background:rgb(22, 180, 180);
+}
+td {
+    padding: 6px;
+    background: rgba(204, 204, 204, 0.281);
+}
+.rodape {
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(22, 180, 180);;
+    color: #fff;
+}
+.rodape-icon p {
+    padding: 2px;
+}
+.rodape-icon img {
+    width: 160px;
+    height: 80px;
+}
+.menu-nav a:hover  {
+    color:#0000008c;
+}
+@media only screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+    .container-menu-espec {
+        width: 1024px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    .item-pic {
+        display: none;
+    }
+    .rodape-icon img {
+        width: 120px;
+        height: 60px;
+    }
+    .menu-nav a {
+        font-size: 16px;
+    }
+    .menu img {
+        width: 100px;
+        height: 60px;
+    }
+    h1 {
+        font-size:26px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    .item-pic {
+        display: none;
+    }
+    .rodape-icon img {
+        display: none;
+    }
+    .menu-espec-lista li {
+        padding: 10px;
+    }
+    .menu-espec-lista {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .container-menu-espec a {
+        margin: 0;
+        text-decoration: none;
+        color: #0000008c;
+        font-weight: 600;
+        border-bottom: 2px solid rgb(22, 180, 180);
+    }
+    .menu-nav a {
+        font-size: 14px;
+        padding: 20px;
+    }
+    .menu img {
+        display:none;
+    }
+    h1 {
+        font-size:26px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .container-topo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabela-espec {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+}
+@media only screen and (max-width: 375px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    .item-pic {
+        display: none;
+    }
+    .rodape-icon img {
+        display: none;
+    }
+    .menu-espec-lista li {
+        padding: 10px;
+    }
+    .menu-espec-lista {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .container-menu-espec a {
+        margin: 0;
+        text-decoration: none;
+        color: #0000008c;
+        font-weight: 600;
+        border-bottom: 2px solid rgb(22, 180, 180);
+    }
+    .menu-nav {
+        display: flex;
+        flex-direction: row;
+        margin: 40px;
+    }
+    .menu-nav a {
+        font-size: 14px;
+        padding: 6px;
+    }
+    .menu img {
+        display:none;
+    }
+    h1 {
+        font-size:26px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .container-topo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabela-espec {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        nav {
+            width: 100%;
+            
+        }
+}
+@media only screen and (max-width: 320px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    .item-pic {
+        display: none;
+    }
+    .rodape-icon img {
+        display: none;
+    }
+    .menu-espec-lista li {
+        padding: 10px;
+    }
+    .menu-espec-lista {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .container-menu-espec a {
+        margin: 0;
+        text-decoration: none;
+        color: #0000008c;
+        font-weight: 600;
+        border-bottom: 2px solid rgb(22, 180, 180);
+    }
+    .menu-nav {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+    .menu-nav a {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .menu img {
+        display:none;
+    }
+    h1 {
+        font-size:26px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .container-topo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabela-espec {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+    .rodape-icon p {
+        font-size: 14px;
+        }
+    nav {
+            width: 100%;
+        }
+}
